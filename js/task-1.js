@@ -1,7 +1,8 @@
 function slugify(title) {
   const array = title.split(" ");
   for (let i = 0; i < array.length; i++) {
-    array[i] = (array[i]).toLowerCase();      
+    const element = array[i];
+    array[i] = (element).toLowerCase();      
   }
   const slug = array.join("-");
   return slug;
